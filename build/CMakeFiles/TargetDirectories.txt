@@ -1,0 +1,5 @@
+/home/kao/learning-operate_system/build/CMakeFiles/edit_cache.dir
+/home/kao/learning-operate_system/build/CMakeFiles/rebuild_cache.dir
+/home/kao/learning-operate_system/build/CMakeFiles/Filesystem.dir
+/home/kao/learning-operate_system/build/CMakeFiles/Semaphore.dir
+/home/kao/learning-operate_system/build/CMakeFiles/Scheduler.dir

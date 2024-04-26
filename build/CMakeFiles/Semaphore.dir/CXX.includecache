@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/semaphore.h
+mutex
+-
+condition_variable
+-
+
+/home/kao/learning-operate_system/src/Semaphore.cpp
+semaphore.h
+/home/kao/learning-operate_system/src/semaphore.h
+thread
+-
+iostream
+-
+

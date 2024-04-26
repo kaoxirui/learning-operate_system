@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/filesystem.h
+mutex
+-
+iostream
+-
+fstream
+-
+string
+-
+
+/home/kao/learning-operate_system/src/Filesystem.cpp
+filesystem.h
+/home/kao/learning-operate_system/src/filesystem.h
+vector
+-
+thread
+-
+
