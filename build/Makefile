@@ -111,6 +111,58 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named JobScheduler
+
+# Build rule for target.
+JobScheduler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 JobScheduler
+.PHONY : JobScheduler
+
+# fast build rule for target.
+JobScheduler/fast:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/build
+.PHONY : JobScheduler/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
+# Target rules for targets named multithread
+
+# Build rule for target.
+multithread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 multithread
+.PHONY : multithread
+
+# fast build rule for target.
+multithread/fast:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/build
+.PHONY : multithread/fast
+
+#=============================================================================
 # Target rules for targets named Filesystem
 
 # Build rule for target.
@@ -122,6 +174,19 @@ Filesystem: cmake_check_build_system
 Filesystem/fast:
 	$(MAKE) -f CMakeFiles/Filesystem.dir/build.make CMakeFiles/Filesystem.dir/build
 .PHONY : Filesystem/fast
+
+#=============================================================================
+# Target rules for targets named DeadLock
+
+# Build rule for target.
+DeadLock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DeadLock
+.PHONY : DeadLock
+
+# fast build rule for target.
+DeadLock/fast:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/build
+.PHONY : DeadLock/fast
 
 #=============================================================================
 # Target rules for targets named Semaphore
@@ -149,6 +214,33 @@ Scheduler/fast:
 	$(MAKE) -f CMakeFiles/Scheduler.dir/build.make CMakeFiles/Scheduler.dir/build
 .PHONY : Scheduler/fast
 
+src/DeadLock.o: src/DeadLock.cpp.o
+
+.PHONY : src/DeadLock.o
+
+# target to build an object file
+src/DeadLock.cpp.o:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/src/DeadLock.cpp.o
+.PHONY : src/DeadLock.cpp.o
+
+src/DeadLock.i: src/DeadLock.cpp.i
+
+.PHONY : src/DeadLock.i
+
+# target to preprocess a source file
+src/DeadLock.cpp.i:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/src/DeadLock.cpp.i
+.PHONY : src/DeadLock.cpp.i
+
+src/DeadLock.s: src/DeadLock.cpp.s
+
+.PHONY : src/DeadLock.s
+
+# target to generate assembly for a file
+src/DeadLock.cpp.s:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/src/DeadLock.cpp.s
+.PHONY : src/DeadLock.cpp.s
+
 src/Filesystem.o: src/Filesystem.cpp.o
 
 .PHONY : src/Filesystem.o
@@ -175,6 +267,33 @@ src/Filesystem.s: src/Filesystem.cpp.s
 src/Filesystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Filesystem.dir/build.make CMakeFiles/Filesystem.dir/src/Filesystem.cpp.s
 .PHONY : src/Filesystem.cpp.s
+
+src/JobScheduler.o: src/JobScheduler.cpp.o
+
+.PHONY : src/JobScheduler.o
+
+# target to build an object file
+src/JobScheduler.cpp.o:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/src/JobScheduler.cpp.o
+.PHONY : src/JobScheduler.cpp.o
+
+src/JobScheduler.i: src/JobScheduler.cpp.i
+
+.PHONY : src/JobScheduler.i
+
+# target to preprocess a source file
+src/JobScheduler.cpp.i:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/src/JobScheduler.cpp.i
+.PHONY : src/JobScheduler.cpp.i
+
+src/JobScheduler.s: src/JobScheduler.cpp.s
+
+.PHONY : src/JobScheduler.s
+
+# target to generate assembly for a file
+src/JobScheduler.cpp.s:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/src/JobScheduler.cpp.s
+.PHONY : src/JobScheduler.cpp.s
 
 src/Scheduler.o: src/Scheduler.cpp.o
 
@@ -230,6 +349,87 @@ src/Semaphore.cpp.s:
 	$(MAKE) -f CMakeFiles/Semaphore.dir/build.make CMakeFiles/Semaphore.dir/src/Semaphore.cpp.s
 .PHONY : src/Semaphore.cpp.s
 
+src/client.o: src/client.cpp.o
+
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
+
+src/multithread.o: src/multithread.cpp.o
+
+.PHONY : src/multithread.o
+
+# target to build an object file
+src/multithread.cpp.o:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/src/multithread.cpp.o
+.PHONY : src/multithread.cpp.o
+
+src/multithread.i: src/multithread.cpp.i
+
+.PHONY : src/multithread.i
+
+# target to preprocess a source file
+src/multithread.cpp.i:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/src/multithread.cpp.i
+.PHONY : src/multithread.cpp.i
+
+src/multithread.s: src/multithread.cpp.s
+
+.PHONY : src/multithread.s
+
+# target to generate assembly for a file
+src/multithread.cpp.s:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/src/multithread.cpp.s
+.PHONY : src/multithread.cpp.s
+
+src/server.o: src/server.cpp.o
+
+.PHONY : src/server.o
+
+# target to build an object file
+src/server.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.o
+.PHONY : src/server.cpp.o
+
+src/server.i: src/server.cpp.i
+
+.PHONY : src/server.i
+
+# target to preprocess a source file
+src/server.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.i
+.PHONY : src/server.cpp.i
+
+src/server.s: src/server.cpp.s
+
+.PHONY : src/server.s
+
+# target to generate assembly for a file
+src/server.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
+.PHONY : src/server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,19 +437,39 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... server"
+	@echo "... JobScheduler"
+	@echo "... client"
 	@echo "... rebuild_cache"
+	@echo "... multithread"
 	@echo "... Filesystem"
+	@echo "... DeadLock"
 	@echo "... Semaphore"
 	@echo "... Scheduler"
+	@echo "... src/DeadLock.o"
+	@echo "... src/DeadLock.i"
+	@echo "... src/DeadLock.s"
 	@echo "... src/Filesystem.o"
 	@echo "... src/Filesystem.i"
 	@echo "... src/Filesystem.s"
+	@echo "... src/JobScheduler.o"
+	@echo "... src/JobScheduler.i"
+	@echo "... src/JobScheduler.s"
 	@echo "... src/Scheduler.o"
 	@echo "... src/Scheduler.i"
 	@echo "... src/Scheduler.s"
 	@echo "... src/Semaphore.o"
 	@echo "... src/Semaphore.i"
 	@echo "... src/Semaphore.s"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
+	@echo "... src/multithread.o"
+	@echo "... src/multithread.i"
+	@echo "... src/multithread.s"
+	@echo "... src/server.o"
+	@echo "... src/server.i"
+	@echo "... src/server.s"
 .PHONY : help
 
 

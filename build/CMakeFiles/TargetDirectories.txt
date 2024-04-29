@@ -1,5 +1,10 @@
 /home/kao/learning-operate_system/build/CMakeFiles/edit_cache.dir
+/home/kao/learning-operate_system/build/CMakeFiles/server.dir
+/home/kao/learning-operate_system/build/CMakeFiles/JobScheduler.dir
+/home/kao/learning-operate_system/build/CMakeFiles/client.dir
 /home/kao/learning-operate_system/build/CMakeFiles/rebuild_cache.dir
+/home/kao/learning-operate_system/build/CMakeFiles/multithread.dir
 /home/kao/learning-operate_system/build/CMakeFiles/Filesystem.dir
+/home/kao/learning-operate_system/build/CMakeFiles/DeadLock.dir
 /home/kao/learning-operate_system/build/CMakeFiles/Semaphore.dir
 /home/kao/learning-operate_system/build/CMakeFiles/Scheduler.dir

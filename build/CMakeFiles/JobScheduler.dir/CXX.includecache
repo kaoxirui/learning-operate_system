@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/jobsecheduler.h
+iostream
+-
+vector
+-
+queue
+-
+algorithm
+-
+
+/home/kao/learning-operate_system/src/JobScheduler.cpp
+jobsecheduler.h
+/home/kao/learning-operate_system/src/jobsecheduler.h
+

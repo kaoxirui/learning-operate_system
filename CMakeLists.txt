@@ -7,6 +7,11 @@ include_directories(
 add_executable(Scheduler ./src/Scheduler.cpp)
 add_executable(Semaphore ./src/Semaphore.cpp)
 add_executable(Filesystem ./src/Filesystem.cpp)
+add_executable(DeadLock ./src/DeadLock.cpp)
+add_executable(multithread ./src/multithread.cpp)
+add_executable(client ./src/client.cpp)
+add_executable(server ./src/server.cpp)
+add_executable(JobScheduler ./src/JobScheduler.cpp)
 
 target_link_libraries(
     Semaphore -lpthread
@@ -14,4 +19,8 @@ target_link_libraries(
 
 target_link_libraries(
     Filesystem -lpthread
+)
+
+target_link_libraries(
+    multithread -lpthread
 )

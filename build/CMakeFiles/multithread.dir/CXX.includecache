@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/multiThread.h
+iostream
+-
+mutex
+-
+queue
+-
+condition_variable
+-
+
+/home/kao/learning-operate_system/src/multithread.cpp
+multiThread.h
+/home/kao/learning-operate_system/src/multiThread.h
+thread
+-
+

@@ -53,7 +53,12 @@ CMAKE_BINARY_DIR = /home/kao/learning-operate_system/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/server.dir/all
+all: CMakeFiles/JobScheduler.dir/all
+all: CMakeFiles/client.dir/all
+all: CMakeFiles/multithread.dir/all
 all: CMakeFiles/Filesystem.dir/all
+all: CMakeFiles/DeadLock.dir/all
 all: CMakeFiles/Semaphore.dir/all
 all: CMakeFiles/Scheduler.dir/all
 
@@ -65,11 +70,124 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/server.dir/clean
+clean: CMakeFiles/JobScheduler.dir/clean
+clean: CMakeFiles/client.dir/clean
+clean: CMakeFiles/multithread.dir/clean
 clean: CMakeFiles/Filesystem.dir/clean
+clean: CMakeFiles/DeadLock.dir/clean
 clean: CMakeFiles/Semaphore.dir/clean
 clean: CMakeFiles/Scheduler.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/server.dir
+
+# All Build rule for target.
+CMakeFiles/server.dir/all:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=15,16 "Built target server"
+.PHONY : CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 0
+.PHONY : CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+CMakeFiles/server.dir/clean:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
+.PHONY : CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/JobScheduler.dir
+
+# All Build rule for target.
+CMakeFiles/JobScheduler.dir/all:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/depend
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=5,6 "Built target JobScheduler"
+.PHONY : CMakeFiles/JobScheduler.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/JobScheduler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/JobScheduler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 0
+.PHONY : CMakeFiles/JobScheduler.dir/rule
+
+# Convenience name for target.
+JobScheduler: CMakeFiles/JobScheduler.dir/rule
+
+.PHONY : JobScheduler
+
+# clean rule for target.
+CMakeFiles/JobScheduler.dir/clean:
+	$(MAKE) -f CMakeFiles/JobScheduler.dir/build.make CMakeFiles/JobScheduler.dir/clean
+.PHONY : CMakeFiles/JobScheduler.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/client.dir
+
+# All Build rule for target.
+CMakeFiles/client.dir/all:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=11,12 "Built target client"
+.PHONY : CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 0
+.PHONY : CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+CMakeFiles/client.dir/clean:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
+.PHONY : CMakeFiles/client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/multithread.dir
+
+# All Build rule for target.
+CMakeFiles/multithread.dir/all:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/depend
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=13,14 "Built target multithread"
+.PHONY : CMakeFiles/multithread.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/multithread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/multithread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 0
+.PHONY : CMakeFiles/multithread.dir/rule
+
+# Convenience name for target.
+multithread: CMakeFiles/multithread.dir/rule
+
+.PHONY : multithread
+
+# clean rule for target.
+CMakeFiles/multithread.dir/clean:
+	$(MAKE) -f CMakeFiles/multithread.dir/build.make CMakeFiles/multithread.dir/clean
+.PHONY : CMakeFiles/multithread.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Filesystem.dir
@@ -78,7 +196,7 @@ clean: CMakeFiles/Scheduler.dir/clean
 CMakeFiles/Filesystem.dir/all:
 	$(MAKE) -f CMakeFiles/Filesystem.dir/build.make CMakeFiles/Filesystem.dir/depend
 	$(MAKE) -f CMakeFiles/Filesystem.dir/build.make CMakeFiles/Filesystem.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=1,2 "Built target Filesystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=3,4 "Built target Filesystem"
 .PHONY : CMakeFiles/Filesystem.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,13 +217,40 @@ CMakeFiles/Filesystem.dir/clean:
 .PHONY : CMakeFiles/Filesystem.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/DeadLock.dir
+
+# All Build rule for target.
+CMakeFiles/DeadLock.dir/all:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/depend
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=1,2 "Built target DeadLock"
+.PHONY : CMakeFiles/DeadLock.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DeadLock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DeadLock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kao/learning-operate_system/build/CMakeFiles 0
+.PHONY : CMakeFiles/DeadLock.dir/rule
+
+# Convenience name for target.
+DeadLock: CMakeFiles/DeadLock.dir/rule
+
+.PHONY : DeadLock
+
+# clean rule for target.
+CMakeFiles/DeadLock.dir/clean:
+	$(MAKE) -f CMakeFiles/DeadLock.dir/build.make CMakeFiles/DeadLock.dir/clean
+.PHONY : CMakeFiles/DeadLock.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Semaphore.dir
 
 # All Build rule for target.
 CMakeFiles/Semaphore.dir/all:
 	$(MAKE) -f CMakeFiles/Semaphore.dir/build.make CMakeFiles/Semaphore.dir/depend
 	$(MAKE) -f CMakeFiles/Semaphore.dir/build.make CMakeFiles/Semaphore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=5,6 "Built target Semaphore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=9,10 "Built target Semaphore"
 .PHONY : CMakeFiles/Semaphore.dir/all
 
 # Build rule for subdir invocation for target.
@@ -132,7 +277,7 @@ CMakeFiles/Semaphore.dir/clean:
 CMakeFiles/Scheduler.dir/all:
 	$(MAKE) -f CMakeFiles/Scheduler.dir/build.make CMakeFiles/Scheduler.dir/depend
 	$(MAKE) -f CMakeFiles/Scheduler.dir/build.make CMakeFiles/Scheduler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=3,4 "Built target Scheduler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kao/learning-operate_system/build/CMakeFiles --progress-num=7,8 "Built target Scheduler"
 .PHONY : CMakeFiles/Scheduler.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kao/learning-operate_system/src/server.cpp
+iostream
+-
+cstring
+-
+unistd.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/un.h
+-
+
